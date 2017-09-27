@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import SQLite
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    let dbPath = Bundle.main.path(forResource: "NBA_Database", ofType: "db")
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window?.rootViewController = HomeViewController()
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

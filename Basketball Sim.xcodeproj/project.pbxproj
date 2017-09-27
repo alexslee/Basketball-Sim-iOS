@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		432716101F7C0C81002A7268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327160F1F7C0C81002A7268 /* AppDelegate.swift */; };
-		432716121F7C0C81002A7268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432716111F7C0C81002A7268 /* ViewController.swift */; };
-		432716151F7C0C81002A7268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432716131F7C0C81002A7268 /* Main.storyboard */; };
 		432716171F7C0C81002A7268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432716161F7C0C81002A7268 /* Assets.xcassets */; };
 		4327161A1F7C0C81002A7268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432716181F7C0C81002A7268 /* LaunchScreen.storyboard */; };
+		43B075EE1F7C132800A5F392 /* NBA_Database.db in Resources */ = {isa = PBXBuildFile; fileRef = 43B075ED1F7C109300A5F392 /* NBA_Database.db */; };
+		43B075F01F7C135F00A5F392 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B075EF1F7C135F00A5F392 /* HomeViewController.swift */; };
 		B63F86772E1B2BE29D0E0817 /* Pods_Basketball_Sim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDF1CDAC90A3F67FAFB24BD /* Pods_Basketball_Sim.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,12 +19,11 @@
 		1FDF1CDAC90A3F67FAFB24BD /* Pods_Basketball_Sim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Basketball_Sim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4327160C1F7C0C81002A7268 /* Basketball Sim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basketball Sim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4327160F1F7C0C81002A7268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		432716111F7C0C81002A7268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		432716141F7C0C81002A7268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		432716161F7C0C81002A7268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		432716191F7C0C81002A7268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4327161B1F7C0C81002A7268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B075ED1F7C109300A5F392 /* NBA_Database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = NBA_Database.db; sourceTree = "<group>"; };
+		43B075EF1F7C135F00A5F392 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B1BE4A0E71B689CC4B2B6AC4 /* Pods-Basketball Sim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basketball Sim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Basketball Sim/Pods-Basketball Sim.debug.xcconfig"; sourceTree = "<group>"; };
 		F523AE7B5CC4D296F245AAD8 /* Pods-Basketball Sim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basketball Sim.release.xcconfig"; path = "Pods/Target Support Files/Pods-Basketball Sim/Pods-Basketball Sim.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,9 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				4327160F1F7C0C81002A7268 /* AppDelegate.swift */,
-				432716111F7C0C81002A7268 /* ViewController.swift */,
+				43B075EF1F7C135F00A5F392 /* HomeViewController.swift */,
 				43B075ED1F7C109300A5F392 /* NBA_Database.db */,
-				432716131F7C0C81002A7268 /* Main.storyboard */,
 				432716161F7C0C81002A7268 /* Assets.xcassets */,
 				432716181F7C0C81002A7268 /* LaunchScreen.storyboard */,
 				4327161B1F7C0C81002A7268 /* Info.plist */,
@@ -152,9 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B075EE1F7C132800A5F392 /* NBA_Database.db in Resources */,
 				4327161A1F7C0C81002A7268 /* LaunchScreen.storyboard in Resources */,
 				432716171F7C0C81002A7268 /* Assets.xcassets in Resources */,
-				432716151F7C0C81002A7268 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,22 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				432716121F7C0C81002A7268 /* ViewController.swift in Sources */,
 				432716101F7C0C81002A7268 /* AppDelegate.swift in Sources */,
+				43B075F01F7C135F00A5F392 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		432716131F7C0C81002A7268 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				432716141F7C0C81002A7268 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		432716181F7C0C81002A7268 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
