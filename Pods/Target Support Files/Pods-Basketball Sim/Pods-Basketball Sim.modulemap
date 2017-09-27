@@ -1,0 +1,6 @@
+framework module Pods_Basketball_Sim {
+  umbrella header "Pods-Basketball Sim-umbrella.h"
+
+  export *
+  module * { export * }
+}
